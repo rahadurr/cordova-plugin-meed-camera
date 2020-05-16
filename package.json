@@ -1,0 +1,48 @@
+{
+  "name": "cordova-plugin-meed-camera",
+  "version": "0.0.1",
+  "description": "This the Native Cordova Camera plugin for iOS, Android and Web",
+  "cordova": {
+    "id": "cordova-plugin-meed-camera",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahadurr/cordova-plugin-meed-camera.git"
+  },
+  "keywords": [
+    "meed",
+    "cordova",
+    "native",
+    "camera",
+    "ios",
+    "android",
+    "web",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=8.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=8.0.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=5.0.0"
+    }
+  ],
+  "author": "Rahadur Rahman <rahadur.rahman@brainstation23.com>",
+  "license": "Apache 2.0 License",
+  "bugs": {
+    "url": "https://github.com/rahadurr/cordova-plugin-meed-camera/issues"
+  },
+  "homepage": "https://github.com/rahadurr/cordova-plugin-meed-camera#readme"
+}
