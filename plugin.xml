@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
-    xmlns:android="http://schemas.android.com/apk/res/android" 
-    id="cordova-plugin-meed-camera" version="0.0.1">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-meed-camera" version="0.0.1">
     <name>Camera</name>
     <description>This the Native Cordova Camera plugin for iOS, Android and Web</description>
     <author> Rahadur Rahman [rahadur.rahman@brainstation23.com]</author>
@@ -22,8 +21,15 @@
                 <param name="android-package" value="com.meedbankingclub.cordova.camera.Camera" />
             </feature>
         </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-feature android:name="android.hardware.camera" />
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="src/android/Camera.java" target-dir="src/com/meedbankingclub/cordova/camera/Camera" />
+        <source-file src="src/android/Camera.java" target-dir="src/com/meedbankingclub/cordova/camera" />
+        <source-file src="src/android/CameraUtils.java" target-dir="src/com/meedbankingclub/cordova/camera" />
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
